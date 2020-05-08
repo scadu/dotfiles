@@ -1,10 +1,3 @@
-# Add coreutils to $PATH
-case "$OSTYPE" in
-    darwin*)
-        export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-    ;;
-esac
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -13,6 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -66,7 +60,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,5 +90,5 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Initiate starship prompt if installed
-[[ -x $(whence -p starship ) ]] && eval "$(starship init zsh)"
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

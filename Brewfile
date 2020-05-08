@@ -6,10 +6,11 @@ brew "tfenv"
 brew "awscli"
 brew "jq"
 brew "git"
-brew "starship" # shell prompt
+# brew "starship" # shell prompt
 
-cask "googlechrome"
+cask "google-chrome"
 cask "visual-studio-code"
-cask "slack"
+# cask "slack"
 cask "coconutbattery"
-cask "font-cascadia"
+cask "font-cascadia-pl"
+cask "font-cascadia-mono-pl"
