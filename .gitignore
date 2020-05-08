@@ -667,3 +667,5 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/vim,linux,macos,python,windows,jetbrains,terraform,visualstudio,jetbrains
+
+Brewfile.lock.json
