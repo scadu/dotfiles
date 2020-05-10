@@ -10,7 +10,7 @@ fi
 if [[ ! -d $OH_MY_ZSH_PATH/.git ]]
 then 
 	git clone https://github.com/ohmyzsh/ohmyzsh $OH_MY_ZSH_PATH -q
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k -q
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $OH_MY_ZSH_PATH/custom/themes/powerlevel10k -q
 else
 	git -C $OH_MY_ZSH_PATH pull -q
 	git -C ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k pull -q
@@ -27,7 +27,7 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		--exclude "Brewfile" \
 		--exclude "Brewfile.lock.json" \
-		-avh --no-perms . ~;
+		-avun --no-perms . ~;
 }
 
 	read "?This may overwrite existing files in your home directory. Are you sure? (y/n) ";
