@@ -6,7 +6,7 @@ brew "tfenv"
 brew "awscli"
 brew "jq"
 brew "git"
-# brew "starship" # shell prompt
+brew "starship" # shell prompt
 
 cask "google-chrome"
 cask "visual-studio-code"
