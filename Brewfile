@@ -9,6 +9,7 @@ brew "jq"
 brew "git"
 brew "starship" # shell prompt
 brew "docker-compose"
+brew "p7zip"
 
 cask "docker", restart_service: :changed
 cask "google-chrome"
@@ -20,3 +21,4 @@ cask "font-cascadia-mono-pl"
 cask "rectangle"
 cask "dozer"
 cask "tunnelblick"
+cask "iterm2"
