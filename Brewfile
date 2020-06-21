@@ -10,6 +10,8 @@ brew "git"
 brew "starship" # shell prompt
 brew "docker-compose"
 brew "p7zip"
+brew "node"
+brew "packer"
 
 cask "docker", restart_service: :changed
 cask "google-chrome"
@@ -21,4 +23,8 @@ cask "rectangle"
 cask "dozer"
 cask "tunnelblick"
 cask "iterm2"
-cask "station"
+cask "keepingyouawake"
+cask "karabiner-elements"
+cask "krisp"
+cask "signal"
+cask "ableton-live-intro"
