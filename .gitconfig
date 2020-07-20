@@ -170,3 +170,10 @@
 # large on big repos.
 #[remote "origin"]
 	#fetch = +refs/pull/*/head:refs/remotes/origin/pull/*
+[user]
+	name = Łukasz Jendrysik
+	email = scadu9@gmail.com
+
+; include for all repositories inside $HOME/to/group
+[includeIf "gitdir:~/Code/work/"]
+	path = ~/Code/work/.gitconfig
